@@ -144,6 +144,14 @@ p, h1, h2, h3, h4, h5, h6 {
     font-size: 18px;
 }
 
+.friends {
+    text-align: center;
+}
+
+.badge {
+    border-radius: 5px;
+}
+
 @media screen and (max-width: 800px) {
     .icon-img {
         width: 30px;
@@ -152,5 +160,14 @@ p, h1, h2, h3, h4, h5, h6 {
 
     .icon-text {
         font-size: 10px;
+    }
+
+    .friends {
+        font-size: 10px;
+    }
+
+    .badge {
+        width: 50%;
+        height: 50%;
     }
 }
