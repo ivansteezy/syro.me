@@ -37,8 +37,10 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .avatar {
     height: 25%;
-    background-color: rebeccapurple;
-    background-image: url("images/header.png");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .menu-icons {
