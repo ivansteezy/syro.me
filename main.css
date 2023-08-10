@@ -78,8 +78,8 @@ p, h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-wrap: wrap;
     overflow-y: auto;
+    background-color: pink;
     justify-content: space-around;
-    align-content: space-around;
 }
 
 .icon {
