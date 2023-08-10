@@ -118,7 +118,7 @@ p, h1, h2, h3, h4, h5, h6 {
     height: 95%;
     width: 95%;
     border-style: solid;
-    border-color: white;
+    border-color: #333366;
     border-width: 2px;
     background-color: #101026;
 }
