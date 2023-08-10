@@ -8,6 +8,37 @@ html {
     background-repeat: repeat;
 }
 
+.banner-font {
+    font-size: 30px;
+}
+
+.banner {
+    width: 200px;
+    height: 200px;
+}
+
+@media screen and (max-width: 1250px) {
+    .banner {
+        width: 100px;
+        height: 100px;
+    }
+
+    .banner-font {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .banner {
+        width: 70px;
+        height: 70px;
+    }
+
+    .banner-font {
+        font-size: 10px;
+    }
+}
+
 p, h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
@@ -36,7 +67,6 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .avatar {
-    height: 25%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,7 +76,24 @@ p, h1, h2, h3, h4, h5, h6 {
 .menu-icons {
     height: 50%;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.icon {
+    width: 100%;
+}
+
+.menu-icons > div {
+    flex-basis: 40%;
+}
+
+@media screen and (max-width: 1250px) {
+    .menu-icons > div {
+        flex-basis: 100%;
+    }
 }
 
 .icon-row {
@@ -54,10 +101,6 @@ p, h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
-}
-
-.friends {
-    
 }
 
 .icon {
@@ -90,4 +133,24 @@ p, h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.icon-img {
+    width: 50px;
+    height: 50px;
+}
+
+.icon-text {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 800px) {
+    .icon-img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .icon-text {
+        font-size: 10px;
+    }
 }
