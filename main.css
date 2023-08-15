@@ -21,6 +21,10 @@ td, th {
     padding-bottom: 10px;
 }
 
+ul {
+    font-family: 'bitmap';
+    color: white;
+}
 
 
 .table-container {
