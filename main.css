@@ -8,6 +8,28 @@ html {
     background-repeat: repeat;
 }
 
+table, th, tr, td {
+    border: 1px solid white;
+    font-family: 'bitmap';
+    width: 95%;
+    color: white;
+}
+
+td, th {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+.table-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .banner-font {
     font-size: 30px;
 }
@@ -15,6 +37,7 @@ html {
 .banner {
     width: 200px;
     height: 200px;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1250px) {
@@ -121,6 +144,7 @@ p, h1, h2, h3, h4, h5, h6 {
     border-color: #333366;
     border-width: 2px;
     background-color: #101026;
+    overflow-y: scroll;
 }
 
 .sidebar {
