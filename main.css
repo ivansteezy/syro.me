@@ -3,6 +3,15 @@
     src: url("fonts/syro.ttf") format('truetype')
 }
 
+@font-face {
+    font-family: 'work-sans-regular';
+    src: url("fonts/WorkSans-Regular.ttf") format('truetype')
+}
+
+@font-face {
+    font-family: 'work-sans-semibold';
+    src: url("fonts/WorkSans-SemiBold.ttf") format('truetype')
+}
 html {
     background-image: url("images/background/american-megatrends-tile.png");
     background-repeat: repeat;
@@ -10,7 +19,7 @@ html {
 
 table, th, tr, td {
     border: 1px solid white;
-    font-family: 'bitmap';
+    font-family: 'work-sans-regular';
     width: 95%;
     color: white;
 }
@@ -22,7 +31,7 @@ td, th {
 }
 
 ul {
-    font-family: 'bitmap';
+    font-family: 'work-sans-regular';
     color: white;
 }
 
@@ -66,13 +75,23 @@ ul {
     }
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
 
     margin-top: 5px;
 
-    font-family: 'bitmap', sans-serif;
+    font-family: 'work-sans-regular', sans-serif;
+    color: white;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+
+    margin-top: 5px;
+
+    font-family: 'work-sans-regular', sans-serif;
     color: white;
 }
 
@@ -84,6 +103,11 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .title {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.main-text {
     margin-top: 30px;
     margin-left: 30px;
 }
@@ -149,6 +173,13 @@ p, h1, h2, h3, h4, h5, h6 {
     border-width: 2px;
     background-color: #101026;
     overflow-y: scroll;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.content-card::-webkit-scrollbar { 
+    display: none;
 }
 
 .sidebar {
