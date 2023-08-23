@@ -73,6 +73,8 @@ ul {
     .banner-font {
         font-size: 10px;
     }
+
+    
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -130,6 +132,12 @@ p {
     flex-wrap: wrap;
     overflow-y: auto;
     justify-content: space-around;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.menu-icons::-webkit-scrollbar { 
+    display: none;
 }
 
 .icon {
@@ -225,7 +233,7 @@ p {
     }
 
     .badge {
-        width: 50%;
-        height: 50%;
+        width: 90%;
+        height: 90%;
     }
 }
